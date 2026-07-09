@@ -48,6 +48,8 @@ console.log("Creating experiences...");`;
 
 
 const developerSkills = [
+    { name: "ADVPL", progress: 60 },
+    { name: "PHP", progress: 75 },
     { name: "JavaScript", progress: 75 },
     { name: "React", progress: 65 },
     { name: "SQL", progress: 80 },
@@ -60,7 +62,7 @@ const designerSkills = [
     { name: "UX Research", progress: 85 },
     { name: "Design Systems", progress: 92 },
     { name: "Prototyping", progress: 88 },
-    { name: "Photoshop", progress: 70 }
+    { name: "Photoshop", progress: 50 }
 ];
 
 
@@ -159,6 +161,8 @@ function writeCode(){
 
         const developerMessages = [
             "loading skills...",
+            "✓ HTML loaded",
+            "✓ CSS loaded",
             "✓ JavaScript loaded",
             "✓ React loaded",
             "✓ SQL loaded",
