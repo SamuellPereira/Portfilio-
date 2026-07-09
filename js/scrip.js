@@ -431,7 +431,7 @@ Date: 2026
 ✔ Building the next version...`;
 
 
-const designerGitText = `samuel@UIStudio:~$ git log --design
+const designerGitText = `SamuelPereira git log --design
 
 commit ux-first-contact
 
@@ -646,7 +646,7 @@ themeText.innerHTML = "Experimente usar o modo Branco";
         terminalPath.style.color = "#111";
 
     terminalPath.innerHTML =
-    "samuel@UIStudio:~$";
+    "SamuelPereira";
 
 
     heroTitle.innerHTML =
@@ -689,7 +689,7 @@ themeText.innerHTML = "Experimente usar o modo Branco";
             terminalPath.style.color = "";
 
     terminalPath.innerHTML =
-    "samuel@PortfolioOS:~$";
+    "SamuelPereira";
 
 
     heroTitle.innerHTML =

@@ -118,6 +118,26 @@ header{
 
 }
 
+.contact-content a{
+
+    color:#d4d4d4;
+    text-decoration:none;
+
+}
+
+
+.contact-content a:hover{
+
+    color:#00ff88;
+
+}
+
+
+body.light .contact-content a:hover{
+
+    color:#7c3aed;
+
+}
 
 .navbar{
 
