@@ -48,8 +48,6 @@ console.log("Creating experiences...");`;
 
 
 const developerSkills = [
-    { name: "HTML", progress: 90 },
-    { name: "CSS", progress: 85 },
     { name: "JavaScript", progress: 75 },
     { name: "React", progress: 65 },
     { name: "SQL", progress: 80 },
@@ -161,8 +159,6 @@ function writeCode(){
 
         const developerMessages = [
             "loading skills...",
-            "✓ HTML loaded",
-            "✓ CSS loaded",
             "✓ JavaScript loaded",
             "✓ React loaded",
             "✓ SQL loaded",
