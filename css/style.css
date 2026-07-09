@@ -1329,6 +1329,13 @@ body.light .scroll-down{
 
 }
 
+.designer-projects{
+
+    display:none;
+
+}
+
+
 /* =========================
    MOBILE VERSION
 ========================= */
@@ -1589,3 +1596,85 @@ body{
 
 }
 
+.projects-container{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+
+}
+
+
+.project-card{
+
+    width:380px;
+
+    background:#111;
+
+    border:1px solid #333;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.project-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px;
+
+    border-bottom:1px solid #333;
+
+}
+
+
+.project-header p{
+
+    margin-left:10px;
+
+}
+
+
+.project-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+
+.project-content{
+
+    font-family:Consolas, monospace;
+    padding:20px;
+
+}
+
+
+.tech{
+
+    color:#888;
+
+    margin:15px 0;
+
+}
