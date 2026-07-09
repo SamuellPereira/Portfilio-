@@ -108,6 +108,7 @@ header{
 }
 
 
+
 .theme-text:hover{
 
     box-shadow:
@@ -259,6 +260,13 @@ header{
 ========================= */
 
 
+.editor::-webkit-scrollbar{
+
+    width:0px;
+    height:0px;
+
+}
+
 .vscode{
 
     width:900px;
@@ -274,6 +282,35 @@ header{
 }
 
 
+.vscode-body{
+
+    display:flex;
+    flex-direction:row;
+    height:calc(100% - 40px);
+    width:100%;
+
+}
+
+
+.editor::-webkit-scrollbar{
+    width:10px;
+}
+
+
+.editor::-webkit-scrollbar-track{
+    background:#1e1e1e;
+}
+
+
+.editor::-webkit-scrollbar-thumb{
+    background:#424242;
+    border-radius:10px;
+}
+
+
+.editor::-webkit-scrollbar-thumb:hover{
+    background:#555;
+}
 
 .vscode-header{
 
@@ -342,18 +379,6 @@ header{
 
 
 
-
-.vscode-body{
-
-    display:flex;
-    height:calc(100% - 40px);
-    width:100%;
-
-}
-
-
-
-
 .explorer{
 
     width:230px;
@@ -361,6 +386,7 @@ header{
     font-size:14px;
     background:var(--card-color);
     color:var(--text-color);
+    flex-shrink:0;
 
 }
 
@@ -388,10 +414,13 @@ header{
 
     flex:1;
     display:flex;
+    align-items:flex-start;
+    justify-content:flex-start;
     background:#1e1e1e;
     padding:20px;
     overflow-y:auto;
     width:100%;
+    text-align:left;
 
 }
 
@@ -405,12 +434,8 @@ header{
 
 #code{
 
-    color:var(--code-color);
-    font-size:15px;
-    line-height:1.6;
-    margin:0;
+    font-size:12px;
     white-space:pre;
-    font-family:Consolas, monospace;
 
 }
 
@@ -451,6 +476,7 @@ header{
     margin-right:20px;
     color:#858585;
     line-height:1.6;
+    flex-shrink:0;
 
 }
 
@@ -477,12 +503,14 @@ header{
 
 }
 
-.editor,
-.code-area,
 #code{
 
-    text-align:left;
-    font-family:"Cascadia Code","Consolas",monospace;
+    color:var(--code-color);
+    font-size:15px;
+    line-height:1.6;
+    margin:0;
+    white-space:pre;
+    font-family:Consolas, monospace;
 
 }
 
@@ -726,10 +754,8 @@ header{
 
     min-height:100vh;
     padding:100px 10%;
-    text-align:center;
 
 }
-
 
 
 #stack h2{
@@ -740,7 +766,6 @@ header{
 }
 
 
-
 .skills-container{
 
     display:grid;
@@ -748,8 +773,6 @@ header{
     gap:30px;
 
 }
-
-
 
 
 .skill-card{
@@ -763,13 +786,11 @@ header{
 }
 
 
-
 .skill-card:hover{
 
     transform:translateY(-10px);
 
 }
-
 
 
 .skill-card h3{
@@ -1117,6 +1138,25 @@ header{
    body light
 ========================= */
 
+body.light::-webkit-scrollbar-track{
+
+    background:#ffffff;
+
+}
+
+
+body.light::-webkit-scrollbar-thumb{
+
+    background:#dddddd;
+
+}
+
+
+body.light::-webkit-scrollbar-thumb:hover{
+
+    background:#7c3aed;
+
+}
 
 body.light .vscode{
 
@@ -1271,5 +1311,265 @@ body.light .scroll-down{
 
 
     color:#7c3aed;
+
+}
+
+/* =========================
+   MOBILE VERSION
+========================= */
+
+@media(max-width:768px){
+
+
+body{
+    overflow-x:hidden;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+
+.logo{
+
+    font-size:14px;
+
+}
+
+
+.toggle{
+
+    transform:scale(.9);
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+    padding:20px;
+
+}
+
+
+#hero-title{
+
+    font-size:32px;
+
+}
+
+.hero h2{
+
+    font-size:28px;
+
+}
+
+
+.hero h3{
+
+    font-size:18px;
+
+}
+
+
+/* VS CODE */
+
+.vscode{
+
+    width:100%;
+    overflow:hidden;
+
+}
+
+
+.explorer{
+
+    width:100%;
+
+}
+
+
+.editor{
+
+    width:100%;
+    overflow-x:auto;
+
+}
+
+
+.code-area pre{
+
+    font-size:12px;
+
+}
+
+
+
+
+/* SOBRE */
+
+
+.about-container{
+
+    flex-direction:column;
+     gap:40px;
+    align-items:center;
+
+}
+
+
+.profile-card{
+
+    width:90%;
+
+}
+
+
+.about-text{
+
+    width:90%;
+
+}
+
+
+.about-text h2{
+
+    font-size:38px;
+
+}
+
+
+
+
+}
+
+/* =========================
+        MOBILE STACK
+========================= */
+
+@media(max-width:768px){
+
+    #stack{
+
+        padding:70px 5%;
+
+    }
+
+
+    #stack h2{
+
+        font-size:32px;
+        margin-bottom:40px;
+
+    }
+
+
+    .skills-container{
+
+        grid-template-columns:1fr;
+        padding:20px;
+
+
+    }
+
+
+    .skill-card{
+
+        padding:25px;
+
+    }
+
+
+}
+
+.terminal-loader{
+
+    width:100%;
+    padding:20px;
+
+}
+
+#projetos,
+#contato,
+#career{
+
+    padding:70px 5%;
+
+}
+
+/* =========================
+   VS CODE MOBILE FINAL
+========================= */
+
+@media(max-width:768px){
+
+    .vscode{
+
+        width:95%;
+        height:600px;
+        margin:30px auto;
+
+    }
+
+
+    .vscode-body{
+
+        display:flex;
+        flex-direction:row;
+        height:calc(100% - 40px);
+
+    }
+
+
+    .explorer{
+
+        display:block;
+        width:90px;
+        padding:10px;
+        font-size:11px;
+
+    }
+
+
+    .editor{
+
+        display:flex;
+        flex:1;
+        overflow-x:auto;
+        padding:15px;
+
+    }
+
+
+    .line-numbers{
+
+        width:25px;
+        margin-right:10px;
+        flex-shrink:0;
+
+    }
+
+
+    .code-area{
+
+        width:auto;
+
+    }
+
+
+    #code{
+
+        font-size:11px;
+        white-space:pre;
+
+    }
 
 }

@@ -81,56 +81,46 @@ const designerSkills = [
 
 
 
-    function updateLines(){
+function updateLines(){
 
-        let totalLines = currentCode.split("\n").length;
+    let totalLines = code.textContent.split("\n").length;
 
-        let numbers = "";
+    let numbers = "";
 
+    for(let i = 1; i <= totalLines; i++){
 
-        for(let i = 1; i <= totalLines; i++){
-
-            numbers += i + "<br>";
-
-        }
-
-
-        lines.innerHTML = numbers;
+        numbers += i + "<br>";
 
     }
 
-
-
-
-    function writeCode(){
-
-
-        if(i < activeCode.length){
-
-
-            currentCode += activeCode[i];
-
-
-            code.textContent = currentCode;
-
-
-            updateLines();
-
-
-            i++;
-
-
-            typingTimer = setTimeout(writeCode,50);
-
-
-        }else{
-
-    codeFinished = true;
-
-    console.log("Código finalizado");
+    lines.innerHTML = numbers;
 
 }
+
+
+
+function writeCode(){
+
+    if(i < activeCode.length){
+
+        currentCode += activeCode[i];
+
+        code.textContent = currentCode;
+
+        updateLines();
+
+        i++;
+
+        typingTimer = setTimeout(writeCode,50);
+
+    }else{
+
+        codeFinished = true;
+
+
     }
+
+}
 
 
 
