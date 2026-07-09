@@ -642,7 +642,8 @@ themeText.innerHTML = "Experimente usar o modo Branco";
         if(isDesignerMode){
 
         themeText.innerHTML = "Voltar para modo Preto";
-
+        document.querySelector(".developer-projects").style.display = "none";
+        document.querySelector(".designer-projects").style.display = "flex";
         terminalPath.style.color = "#111";
 
     terminalPath.innerHTML =
@@ -695,6 +696,8 @@ themeText.innerHTML = "Experimente usar o modo Branco";
 
         }else{
 
+        document.querySelector(".developer-projects").style.display = "block";
+        document.querySelector(".designer-projects").style.display = "none";
         themeText.innerHTML = "Experimente usar o modo Branco";
 
             terminalPath.style.color = "";

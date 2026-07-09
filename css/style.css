@@ -1329,12 +1329,54 @@ body.light .scroll-down{
 
 }
 
+
 .designer-projects{
 
     display:none;
 
+    justify-content:center;
+
+    align-items:center;
+
 }
 
+body.light .designer-projects .project-card{
+
+    background:white;
+
+    border:1px solid #eee;
+
+    color:#111;
+
+}
+
+
+body.light .designer-projects .project-header{
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+body.light .designer-projects .project-content{
+
+    color:#333;
+
+}
+
+
+body.light .designer-projects .tech{
+
+    color:#7c3aed;
+
+}
+
+
+body.light .designer-projects .project-content a{
+
+    color:#7c3aed;
+
+}
 
 /* =========================
    MOBILE VERSION
