@@ -661,6 +661,17 @@ themeText.innerHTML = "Experimente usar o modo Branco";
     "design.fig";
 
 
+            bioTitle.innerHTML = "Olá, eu sou Samuel Pereira";
+
+        bioText1.innerHTML =
+        "Designer focado em criar interfaces modernas, experiências intuitivas e soluções digitais centradas no usuário.";
+
+        bioText2.innerHTML =
+        "Trabalho com UI Design, UX Research, Design Systems e prototipação, buscando unir estética e funcionalidade.";
+
+        bioText3.innerHTML =
+        "Acredito que bons produtos nascem da combinação entre criatividade, tecnologia e entendimento das pessoas.";
+
     activeCode = designerCode;
     updateSkills(designerSkills);
     messages = designerMessages;
