@@ -627,7 +627,7 @@ let gitStarted = false;
     const bioText3 = document.getElementById("bio-text-3");
     
 
-themeText.innerHTML = "⚡ Experimente modo Branco";
+themeText.innerHTML = "Experimente usar o modo Branco";
 
     theme.addEventListener("change",()=>{
 
@@ -641,7 +641,7 @@ themeText.innerHTML = "⚡ Experimente modo Branco";
 
         if(isDesignerMode){
 
-        themeText.innerHTML = "⚡ Voltar para modo Preto";
+        themeText.innerHTML = "Voltar para modo Preto";
 
         terminalPath.style.color = "#111";
 
