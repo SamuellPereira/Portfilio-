@@ -161,8 +161,8 @@ function writeCode(){
 
         const developerMessages = [
             "loading skills...",
-            "✓ HTML loaded",
-            "✓ CSS loaded",
+            "✓ ADVPL loaded",
+            "✓ PHP loaded",
             "✓ JavaScript loaded",
             "✓ React loaded",
             "✓ SQL loaded",
