@@ -357,7 +357,7 @@ function writeCode(){
                 break;
 
             default:
-                path.innerHTML = "samuel@Portfolio:~$";
+                path.innerHTML = "SamuelPereira";
 
         }
 
